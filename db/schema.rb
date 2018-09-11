@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_04_200623) do
+ActiveRecord::Schema.define(version: 2018_09_09_121226) do
 
   create_table "comments", force: :cascade do |t|
     t.text "comment"
@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2018_09_04_200623) do
     t.string "theme"
     t.integer "difficulty"
     t.text "description"
-    t.integer "global_note"
     t.integer "min_player"
     t.integer "max_player"
     t.datetime "duration"
@@ -45,6 +44,7 @@ ActiveRecord::Schema.define(version: 2018_09_04_200623) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "escape_game_id"
+    t.float "global_note"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,0 +1,12 @@
+%h1
+  = @escape_game.name
+  - if @escape_game.global_note.present?
+    %span.note= @escape_game.global_note.to_i
+%p.description= @escape_game.description
+
+%ul
+  - @escape_game.scenarios.each do |scenar|
+    %li
+      = link_to escape_game_scenario_path(@escape_game, scenar) do
+        = scenar.name
+        %span Voir plus

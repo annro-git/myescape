@@ -11,4 +11,5 @@
 class User < ApplicationRecord
 	has_many :comments
 	has_many :scenarios, through: :comments
+	validates :name, uniqueness: true
 end

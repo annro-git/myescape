@@ -14,4 +14,7 @@
 class Comment < ApplicationRecord
 	belongs_to :user
 	belongs_to :scenario
+
+	validates :user_id, uniqueness: { scope: :scenario_id, message: "L'utilisateur a déjà commenté ce scenario." }
+	validates :global_note, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 10 }
 end

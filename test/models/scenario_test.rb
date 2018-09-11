@@ -7,7 +7,6 @@
 #  theme            :string
 #  difficulty       :integer
 #  description      :text
-#  global_note      :integer
 #  min_player       :integer
 #  max_player       :integer
 #  duration         :datetime
@@ -15,6 +14,7 @@
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #  escape_game_id   :integer
+#  global_note      :float
 #
 
 require 'test_helper'

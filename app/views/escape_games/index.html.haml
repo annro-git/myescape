@@ -1,0 +1,9 @@
+%h1
+  Liste des Escape Games
+  = "(#{@escape_games.count})"
+
+%ul
+  - @escape_games.each do |escape_game|
+    %li
+      = link_to escape_game.name, escape_game_path(escape_game.id), class: 'link-list'
+
