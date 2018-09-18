@@ -1,4 +1,4 @@
-class EscapeGame::ScenariosController < ApplicationController
+class EscapeGames::ScenariosController < ApplicationController
 
   def show
     @scenario = EscapeGame.find(params[:escape_game_id]).scenarios.where(id: params[:id]).first

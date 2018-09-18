@@ -1,8 +1,13 @@
 TODO
 
-#2018-09-11
-
-! Corriger redondance repertoire views.
+#2018-09-18
+- Utiliser un partial pour les formulaires création/édition
+- Trouver un logiciel de diagramme
+- Faire un template html/css
+- Cours spec Ruby (héritage, syntaxe, bloc, boucles, conditions, collections, tableaux, tableaux associatifs)
+- method HTML
+- dom JS
+- jQuery validate
 
 #2018-09-04
 - Faire des views pour saisir un escape_game

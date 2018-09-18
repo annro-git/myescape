@@ -1,0 +1,10 @@
+%h1 Saisissez un nouveau Escape Game
+
+
+= form_for(@escape_game, url: escape_games_path, method: :post, html: { class: 'escape-game-form' }) do |f|
+  .form-group
+    = f.text_field :name, class: 'form-control'
+  .form-group
+    = f.text_area :description, class: 'form-control'
+  .form-group
+    = f.submit "Envoyer", class: 'btn btn-default'

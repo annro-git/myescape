@@ -10,3 +10,6 @@
       = link_to escape_game_scenario_path(@escape_game, scenar) do
         = scenar.name
         %span Voir plus
+
+= link_to "Modifier l'Escape Game", edit_escape_game_path(@escape_game), class: 'btn btn-warning'
+= link_to "Supprimer l'Escape Game", escape_game_path(@escape_game), method: :delete, class: 'btn btn-danger'

@@ -14,5 +14,5 @@
 #
 
 class EscapeGame < ApplicationRecord
-	has_many :scenarios
+	has_many :scenarios, dependent: :destroy
 end

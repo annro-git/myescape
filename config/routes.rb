@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: 'welcome#index'
 
   resources :escape_games do
-    resources :scenarios, controller: 'escape_game/scenarios', except: :index
+    resources :scenarios, controller: 'escape_games/scenarios', except: :index
   end
 end
