@@ -1,0 +1,7 @@
+= form_for(@escape_game, url: url, method: methode, html: { class: 'escape-game-form' }) do |f|
+  .form-group
+    = f.text_field :name, class: 'form-control'
+  .form-group
+    = f.text_area :description, class: 'form-control'
+  .form-group
+    = f.submit submit, class: 'btn btn-default'

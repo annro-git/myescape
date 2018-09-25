@@ -2,11 +2,4 @@
   Modifier
   = "#{@escape_game.name}"
 
-
-= form_for(@escape_game, url: escape_game_path(@escape_game), method: :patch, html: { class: 'escape-game-form' }) do |f|
-  .form-group
-    = f.text_field :name, class: 'form-control'
-  .form-group
-    = f.text_area :description, class: 'form-control'
-  .form-group
-    = f.submit "Modifier", class: 'btn btn-default'
+= render partial: "form", locals: {submit: "Modifier", url: escape_games_path, methode: :post}
